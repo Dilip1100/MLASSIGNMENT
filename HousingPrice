@@ -9,12 +9,6 @@ i = 1
 x_i = x_train[i]
 y_i = y_train[i]
 w = 100
-b = 200
-print(f"w: {w}")
-print(f"b: {b}")
-x_i = x_train[i]
-y_i = y_train[i]
-w = 100
 b = 2000
 print(f"w: {w}")
 print(f"b: {b}")
@@ -26,5 +20,5 @@ def compute_model_output(x, w, b):
         
     return f_wb
 tmp_f_wb = compute_model_output(x_train, w, b,)
-plt.plot(x_train, tmp_f_wb, c='b',label='Our Prediction')
-plt.title("Housing Price Predictor")
+plt.plot(x_train, tmp_f_wb, c='r',label='Our Prediction')
+plt.title("Housing")
